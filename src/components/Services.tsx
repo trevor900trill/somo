@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Search, Factory, Layers } from 'lucide-react';
+import { Search, Factory, Layers, Circle } from 'lucide-react';
 
 const otherServices = [
   {
@@ -54,32 +54,32 @@ export function Services() {
                   </div>
               )}
             </div>
-            <div className="flex flex-col gap-8">
-                <div className="relative md:-mt-32">
-                    <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden">
-                        <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-white/20" />
-                        <div className="w-16 h-16 rounded-full bg-white mb-4" />
-                        <h3 className="text-xl font-bold">Pay-Per-Use Machines</h3>
-                        <p className="text-primary-foreground/90">
-                        This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.
-                        </p>
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-12 items-start">
+              <div className="md:col-span-2 relative">
+                <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden md:-mt-32">
+                    <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-white/20" />
+                    <div className="w-16 h-16 rounded-full bg-white mb-4 flex items-center justify-center">
+                      {/* Icon can go here if needed */}
                     </div>
+                    <h3 className="text-xl font-bold">Pay-Per-Use Machines</h3>
+                    <p className="text-primary-foreground/90 text-sm">
+                    This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.
+                    </p>
                 </div>
-                 <div className="mt-8 grid sm:grid-cols-2 gap-8">
-                    {otherServices.map((service) => (
-                        <div key={service.title} className="flex flex-col items-center text-center sm:items-start sm:text-left gap-4">
-                            <div className="flex-shrink-0">
-                                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
-                                    <service.icon className="w-8 h-8 text-primary" />
-                                </div>
-                            </div>
-                            <div className="space-y-2">
-                                <h4 className="text-lg font-bold">{service.title}</h4>
-                                <p className="text-muted-foreground text-sm">{service.description}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+              </div>
+              {otherServices.map((service) => (
+                  <div key={service.title} className="flex flex-col items-start text-left gap-4">
+                      <div className="flex-shrink-0">
+                          <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
+                              <service.icon className="w-8 h-8 text-primary" />
+                          </div>
+                      </div>
+                      <div className="space-y-2">
+                          <h4 className="text-lg font-bold">{service.title}</h4>
+                          <p className="text-muted-foreground text-sm">{service.description}</p>
+                      </div>
+                  </div>
+              ))}
             </div>
           </div>
         </div>
