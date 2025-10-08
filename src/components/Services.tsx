@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Search, Factory, Leaf, Layers } from 'lucide-react';
+import { Search, Factory, Layers } from 'lucide-react';
 
 const services = [
   {
