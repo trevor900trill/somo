@@ -31,10 +31,10 @@
       "imageHint": "portrait person"
     },
     {
-      "id": "services-image",
-      "description": "A dramatic coastal landscape with a beach and cliffs under a cloudy sky.",
-      "imageUrl": "https://picsum.photos/seed/coastline/550/367",
-      "imageHint": "coastal landscape"
+      "id": "baking-cookies",
+      "description": "Close-up of gloved hands placing cookies on a baking tray.",
+      "imageUrl": "https://picsum.photos/seed/cookies/550/367",
+      "imageHint": "baking cookies"
     },
     {
       "id": "raw-materials",

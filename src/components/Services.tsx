@@ -25,7 +25,7 @@ const services = [
 ];
 
 export function Services() {
-  const servicesImage = PlaceHolderImages.find((p) => p.id === 'services-image');
+  const servicesImage = PlaceHolderImages.find((p) => p.id === 'baking-cookies');
 
   return (
     <section id="services" className="w-full py-16 md:py-24 lg:py-32 bg-background">
@@ -64,7 +64,7 @@ export function Services() {
                 </p>
               </div>
               <div className="grid sm:grid-cols-2 gap-x-10 gap-y-12">
-                  {services.slice(0, 2).map((service) => (
+                  {services.map((service) => (
                       <div key={service.title} className="flex flex-col gap-4 items-start">
                           <div className="flex-shrink-0">
                               <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
