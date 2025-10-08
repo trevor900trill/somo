@@ -13,6 +13,12 @@
       "imageHint": "smiling artisan"
     },
     {
+      "id": "who-we-are-image",
+      "description": "Three people in a lab environment discussing something.",
+      "imageUrl": "https://picsum.photos/seed/labdiscuss/600/400",
+      "imageHint": "lab workers discussion"
+    },
+    {
       "id": "testimonial-1",
       "description": "Portrait of a person.",
       "imageUrl": "https://picsum.photos/seed/person1/100/100",
