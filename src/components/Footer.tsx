@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 const serviceLinks = [
   { href: "#", text: "Technical Training" },
@@ -24,11 +25,18 @@ const contactLinks = [
   { href: "#", text: "Terms Of Service" },
 ];
 
+const socialLinks = [
+    { href: "#", icon: Instagram },
+    { href: "#", icon: Facebook },
+    { href: "#", icon: Twitter },
+    { href: "#", icon: Youtube },
+]
+
 export function Footer() {
   const footerLogo = PlaceHolderImages.find(p => p.id === 'footer-logo');
 
   return (
-    <footer id="contact" className="w-full bg-secondary/30 py-12 md:py-16">
+    <footer id="contact" className="w-full bg-secondary/30 pt-12 md:pt-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-12 items-center">
           <div className="lg:col-span-4 flex justify-center lg:justify-start">
@@ -81,6 +89,18 @@ export function Footer() {
               </ul>
             </div>
           </div>
+        </div>
+        <div className="mt-8 pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+                {socialLinks.map((link, index) => (
+                    <Link key={index} href={link.href} className="text-primary hover:text-primary/80">
+                        <link.icon className="w-6 h-6" />
+                    </Link>
+                ))}
+            </div>
+            <p className="text-muted-foreground text-sm text-center md:text-right">
+                Copyright @ 2025 Somo. All rights reserved
+            </p>
         </div>
       </div>
     </footer>
