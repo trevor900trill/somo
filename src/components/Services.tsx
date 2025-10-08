@@ -64,7 +64,7 @@ export function Services() {
                 </p>
               </div>
               <div className="grid sm:grid-cols-2 gap-x-10 gap-y-12">
-                  {services.map((service) => (
+                  {services.slice(0, 2).map((service) => (
                       <div key={service.title} className="flex flex-col gap-4 items-start">
                           <div className="flex-shrink-0">
                               <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">

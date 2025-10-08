@@ -32,9 +32,9 @@
     },
     {
       "id": "services-image",
-      "description": "Hands in blue gloves placing a tray of cookies into an oven.",
-      "imageUrl": "https://picsum.photos/seed/baking/550/367",
-      "imageHint": "baking cookies"
+      "description": "A dramatic coastal landscape with a beach and cliffs under a cloudy sky.",
+      "imageUrl": "https://picsum.photos/seed/coastline/550/367",
+      "imageHint": "coastal landscape"
     },
     {
       "id": "raw-materials",
