@@ -7,7 +7,7 @@ import { Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 const serviceLinks = [
   { href: "#", text: "Technical Training" },
-  { href: "#", text: "KEBs Certification" },
+  { href: "#", text: "KEBS Certification" },
   { href: "#", text: "Raw & Packaging Material Sourcing" },
 ];
 
