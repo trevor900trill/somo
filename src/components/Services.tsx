@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Search, Factory, Layers, Circle } from 'lucide-react';
+import { Search, Factory, Layers } from 'lucide-react';
 
 const otherServices = [
   {
@@ -54,9 +54,9 @@ export function Services() {
                   </div>
               )}
             </div>
-            <div className="grid md:grid-cols-2 gap-x-8 gap-y-12 items-start">
-              <div className="md:col-span-2 relative">
-                <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden md:-mt-32">
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <div className="relative md:-mt-24">
+                <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden h-full">
                     <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-white/20" />
                     <div className="w-16 h-16 rounded-full bg-white mb-4 flex items-center justify-center">
                       {/* Icon can go here if needed */}
