@@ -42,7 +42,7 @@ export function Header() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+                  className={cn("text-sm font-medium transition-colors hover:text-foreground", isScrolled ? "text-foreground/80" : "text-foreground")}
                   prefetch={false}
                 >
                   {link.label}
