@@ -3,55 +3,55 @@
     {
       "id": "hero-background",
       "description": "A chef standing on the right against a bright, whitish kitchen background, with empty space on the left.",
-      "imageUrl": "https://images.unsplash.com/photo-1595261242324-6b31e2e2b34b?q=80&w=1920&h=1080&fit=crop",
+      "imageUrl": "https://placehold.co/1920x1080?text=Image",
       "imageHint": "chef cooking"
     },
     {
       "id": "who-we-are-image",
       "description": "A team of chefs working together in a modern, well-lit kitchen.",
-      "imageUrl": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://placehold.co/600x400?text=Image",
       "imageHint": "chefs discussion"
     },
     {
       "id": "testimonial-feature",
       "description": "Close-up of a chef's hands artfully garnishing a gourmet dish.",
-      "imageUrl": "https://images.unsplash.com/photo-1600565193348-f74d3c2726a4?q=80&w=500&h=350&fit=crop",
+      "imageUrl": "https://placehold.co/500x350?text=Image",
       "imageHint": "chef plating"
     },
     {
       "id": "testimonial-dorells",
       "description": "Portrait of a smiling male.",
-      "imageUrl": "https://picsum.photos/seed/portrait1/300/300",
+      "imageUrl": "https://placehold.co/300x300?text=Image",
       "imageHint": "male portrait"
     },
     {
       "id": "testimonial-chinaza",
       "description": "Portrait of a smiling female.",
-      "imageUrl": "https://picsum.photos/seed/portrait2/300/300",
+      "imageUrl": "https://placehold.co/300x300?text=Image",
       "imageHint": "female portrait"
     },
     {
       "id": "testimonial-momix",
       "description": "Portrait of a person tasting a sauce.",
-      "imageUrl": "https://picsum.photos/seed/portrait3/300/300",
+      "imageUrl": "https://placehold.co/300x300?text=Image",
       "imageHint": "person tasting"
     },
     {
       "id": "baking-cookies",
       "description": "A chef dusting flour over a freshly prepared dough on a wooden board.",
-      "imageUrl": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=550&h=367&fit=crop",
+      "imageUrl": "https://placehold.co/550x367?text=Image",
       "imageHint": "chef baking"
     },
     {
       "id": "newsletter-image",
       "description": "A female chef smiling while holding a freshly baked loaf of bread in a rustic kitchen.",
-      "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=450&h=450&fit=crop",
+      "imageUrl": "https://placehold.co/450x450?text=Image",
       "imageHint": "chef smiling"
     },
     {
       "id": "footer-logo",
       "description": "Company logo with a food-related icon.",
-      "imageUrl": "https://picsum.photos/seed/foodlogo/150/150",
+      "imageUrl": "https://placehold.co/150x150?text=Logo",
       "imageHint": "food logo"
     }
   ]
