@@ -2,13 +2,14 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Hand } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: "#services", label: "Services" },
+  { href: "#facility", label: "Our Facility" },
   { href: "#about", label: "About" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -18,8 +19,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <Hand className="h-7 w-7 text-primary" />
-          <span className="text-2xl font-bold tracking-tight">Somo Hub</span>
+          <span className="text-2xl font-bold tracking-tight">SOMO</span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -37,7 +37,10 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:inline-flex">
-            <Link href="#contact">Contact Us</Link>
+            <Link href="#">
+              <ShoppingCart className="mr-2 h-4 w-4" />
+              Shop Now
+            </Link>
           </Button>
           <Button
             variant="outline"
@@ -68,7 +71,10 @@ export function Header() {
               ))}
             </nav>
             <Button asChild>
-              <Link href="#contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+              <Link href="#" onClick={() => setIsMenuOpen(false)}>
+                <ShoppingCart className="mr-2 h-4 w-4" />
+                Shop Now
+              </Link>
             </Button>
           </div>
         </div>

@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A wide shot of an artisan workshop, clean and organized.",
-      "imageUrl": "https://picsum.photos/seed/somohero/1920/1080",
-      "imageHint": "artisan workshop"
+      "description": "A woman in a lab coat and hairnet is smiling while preparing food.",
+      "imageUrl": "https://picsum.photos/seed/somoheroproduction/1920/1080",
+      "imageHint": "food production"
     },
     {
       "id": "about-us-image",
