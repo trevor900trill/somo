@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Search, Factory, Layers } from 'lucide-react';
 
-const services = [
+const otherServices = [
   {
     icon: Search,
     title: 'Technical Training on Product Formulation',
@@ -55,7 +55,7 @@ export function Services() {
               )}
             </div>
             <div className="flex flex-col gap-10">
-              <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden -mt-16">
+              <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden">
                 <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-white/20" />
                 <div className="w-16 h-16 rounded-full bg-white mb-4" />
                 <h3 className="text-xl font-bold">Pay-Per-Use Machines</h3>
@@ -63,22 +63,22 @@ export function Services() {
                   This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.
                 </p>
               </div>
-              <div className="flex flex-col gap-y-12">
-                  {services.map((service) => (
-                      <div key={service.title} className="flex gap-6 items-start">
-                          <div className="flex-shrink-0">
-                              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
-                                  <service.icon className="w-8 h-8 text-primary" />
-                              </div>
-                          </div>
-                          <div className="space-y-2">
-                              <h4 className="text-lg font-bold">{service.title}</h4>
-                              <p className="text-muted-foreground text-sm">{service.description}</p>
+            </div>
+          </div>
+          <div className="mt-16 flex flex-col gap-y-12">
+              {otherServices.map((service) => (
+                  <div key={service.title} className="flex gap-6 items-start">
+                      <div className="flex-shrink-0">
+                          <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
+                              <service.icon className="w-8 h-8 text-primary" />
                           </div>
                       </div>
-                  ))}
-              </div>
-            </div>
+                      <div className="space-y-2">
+                          <h4 className="text-lg font-bold">{service.title}</h4>
+                          <p className="text-muted-foreground text-sm">{service.description}</p>
+                      </div>
+                  </div>
+              ))}
           </div>
         </div>
       </div>
