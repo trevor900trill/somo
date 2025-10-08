@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A woman in a lab coat and hairnet is smiling while preparing food.",
-      "imageUrl": "https://picsum.photos/seed/somoheroproduction/1920/1080",
-      "imageHint": "food production"
+      "description": "A chef peeling potatoes in a professional kitchen.",
+      "imageUrl": "https://picsum.photos/seed/chefpeelingpotatoes/1920/1080",
+      "imageHint": "chef peeling potatoes"
     },
     {
       "id": "about-us-image",
