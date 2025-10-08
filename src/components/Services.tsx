@@ -54,7 +54,7 @@ export function Services() {
                   </div>
               )}
             </div>
-            <div className="grid grid-cols-1 gap-8">
+            <div className="flex flex-col gap-8">
                 <div className="relative md:-mt-32">
                     <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden">
                         <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-white/20" />
@@ -65,7 +65,7 @@ export function Services() {
                         </p>
                     </div>
                 </div>
-                 <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                 <div className="mt-8 grid sm:grid-cols-2 gap-8">
                     {otherServices.map((service) => (
                         <div key={service.title} className="flex flex-col items-center text-center sm:items-start sm:text-left gap-4">
                             <div className="flex-shrink-0">
