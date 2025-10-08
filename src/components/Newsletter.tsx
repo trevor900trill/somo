@@ -34,8 +34,8 @@ export function Newsletter() {
     <section id="newsletter" className="w-full py-12 md:py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-secondary/30 rounded-3xl p-8 md:p-12 lg:p-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+          <div className="grid lg:grid-cols-5 gap-12 items-center">
+            <div className="lg:col-span-2 space-y-6">
               <p className="text-primary font-semibold">Subscribe Now</p>
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                 Subscriber To <span className="text-primary">Our</span> Newsletter
@@ -57,15 +57,16 @@ export function Newsletter() {
                 Already a member? <Link href="#" className="font-semibold text-primary hover:underline">Sign In</Link>
               </p>
             </div>
-            <div className="flex justify-center lg:justify-end">
-              <Image 
-                src={newsletterImage.imageUrl}
-                alt={newsletterImage.description}
-                width={450}
-                height={450}
-                className="rounded-2xl object-cover"
-                data-ai-hint={newsletterImage.imageHint}
-              />
+            <div className="lg:col-span-3 flex justify-center lg:justify-end">
+              <div className="relative w-full aspect-[4/3] max-w-2xl">
+                <Image 
+                  src={newsletterImage.imageUrl}
+                  alt={newsletterImage.description}
+                  fill
+                  className="rounded-2xl object-cover"
+                  data-ai-hint={newsletterImage.imageHint}
+                />
+              </div>
             </div>
           </div>
         </div>
