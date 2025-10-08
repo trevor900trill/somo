@@ -59,6 +59,12 @@
       "description": "Woman in a hairnet and apron mixing ingredients in a bowl in a kitchen.",
       "imageUrl": "https://picsum.photos/seed/mixing/450/450",
       "imageHint": "woman mixing"
+    },
+    {
+      "id": "footer-logo",
+      "description": "Circular SOMO logo with a textured yellow background.",
+      "imageUrl": "https://picsum.photos/seed/somologo/150/150",
+      "imageHint": "company logo"
     }
   ]
 }
