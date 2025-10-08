@@ -36,7 +36,7 @@ export function Footer() {
   const footerLogo = PlaceHolderImages.find(p => p.id === 'footer-logo');
 
   return (
-    <footer id="contact" className="w-full bg-secondary/30 pt-12 md:pt-16">
+    <footer id="contact" className="w-full bg-secondary/30 pt-12 md:pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-12 items-center">
           <div className="lg:col-span-4 flex justify-center lg:justify-start">
