@@ -14,7 +14,7 @@ export function Hero() {
           src={heroImage.imageUrl}
           alt={heroImage.description}
           fill
-          className="object-cover object-center"
+          className="object-cover object-center -z-10"
           data-ai-hint={heroImage.imageHint}
           priority
         />
@@ -31,7 +31,7 @@ export function Hero() {
             <Button asChild size="lg" className="rounded-sm">
               <Link href="#">Book A Session</Link>
             </Button>
-            <Button asChild size="lg" variant="link" className="text-primary">
+            <Button asChild size="lg" variant="link" className="text-foreground">
               <Link href="#">Contact Us <ArrowRightCircle className="ml-2" /></Link>
             </Button>
           </div>
