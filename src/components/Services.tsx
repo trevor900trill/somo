@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { FileText, Factory, Leaf } from 'lucide-react';
+import { FileText, Factory, Leaf, Search } from 'lucide-react';
 
 const services = [
   {
-    icon: FileText,
+    icon: Search,
     title: 'Technical Training on Product Formulation',
     description:
       'We offer specialized training that focuses on product formulation, teaching participants the science and techniques behind creating effective and market-ready products. This training covers the entire formulation process from concept to execution.',
@@ -32,7 +32,7 @@ export function Services() {
         <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
           <div className="flex flex-col gap-8">
             <div className="space-y-4">
-                <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-primary/80">
+                <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-foreground">
                     Services We <span className="text-primary">Provide</span>
                 </h2>
                 <p className="text-muted-foreground md:text-lg">
@@ -45,7 +45,7 @@ export function Services() {
                         src={servicesImage.imageUrl}
                         alt={servicesImage.description}
                         width={550}
-                        height={310}
+                        height={367}
                         className="rounded-xl object-cover shadow-lg"
                         data-ai-hint={servicesImage.imageHint}
                     />
@@ -53,8 +53,9 @@ export function Services() {
             )}
           </div>
           <div className="flex flex-col gap-8">
-            <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4">
-              <div className="w-12 h-12 rounded-full bg-white mb-4" />
+            <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden">
+              <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-white/20" />
+               <div className="w-16 h-16 rounded-full bg-white mb-4" />
               <h3 className="text-xl font-bold">Pay-Per-Use Machines</h3>
               <p className="text-primary-foreground/90">
                 This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.

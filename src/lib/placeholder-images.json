@@ -3,7 +3,7 @@
     {
       "id": "hero-background",
       "description": "A chef preparing food in a kitchen with a white background for text visibility.",
-      "imageUrl": "https://picsum.photos/seed/potatopeel/1920/1080",
+      "imageUrl": "https://picsum.photos/seed/chefpeel/1920/1080",
       "imageHint": "chef peeling potatoes"
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": "services-image",
       "description": "Hands in blue gloves placing a tray of cookies into an oven.",
-      "imageUrl": "https://picsum.photos/seed/baking/550/310",
+      "imageUrl": "https://picsum.photos/seed/baking/550/367",
       "imageHint": "baking cookies"
     }
   ]
