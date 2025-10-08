@@ -2,8 +2,8 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A chef meticulously preparing a dish in a professional kitchen setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c9f?q=80&w=1920&h=1080&fit=crop",
+      "description": "A chef standing on the right against a bright, whitish kitchen background, with empty space on the left.",
+      "imageUrl": "https://images.unsplash.com/photo-1595261242324-6b31e2e2b34b?q=80&w=1920&h=1080&fit=crop",
       "imageHint": "chef cooking"
     },
     {
