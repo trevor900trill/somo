@@ -6,6 +6,7 @@ import { Menu, X, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
+  { href: "/", label: "Home" },
   { href: "#services", label: "Services" },
   { href: "#facility", label: "Our Facility" },
   { href: "#about", label: "About" },
@@ -16,16 +17,16 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <span className="text-2xl font-bold tracking-tight">SOMO</span>
+          <span className="text-2xl font-bold tracking-tight text-primary">SOMO</span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <Link
-              key={link.href}
+              key={link.label}
               href={link.href}
               className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
               prefetch={false}
@@ -36,7 +37,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button asChild className="hidden md:inline-flex">
+          <Button asChild className="hidden md:inline-flex rounded-sm">
             <Link href="#">
               <ShoppingCart className="mr-2 h-4 w-4" />
               Shop Now
@@ -70,7 +71,7 @@ export function Header() {
                 </Link>
               ))}
             </nav>
-            <Button asChild>
+            <Button asChild className="rounded-sm">
               <Link href="#" onClick={() => setIsMenuOpen(false)}>
                 <ShoppingCart className="mr-2 h-4 w-4" />
                 Shop Now
