@@ -30,7 +30,7 @@ export function Services() {
   return (
     <section id="services" className="w-full py-16 md:py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="bg-secondary/50 rounded-3xl p-8 md:p-12 lg:p-16">
+        <div className="bg-secondary/50 rounded-[4rem] p-8 md:p-12 lg:p-16">
           <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
             <div className="flex flex-col gap-8">
               <div className="space-y-4">
@@ -55,7 +55,7 @@ export function Services() {
               )}
             </div>
             <div className="flex flex-col gap-10">
-              <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden">
+              <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden -mt-16">
                 <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-white/20" />
                 <div className="w-16 h-16 rounded-full bg-white mb-4" />
                 <h3 className="text-xl font-bold">Pay-Per-Use Machines</h3>
