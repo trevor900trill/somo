@@ -35,6 +35,12 @@
       "description": "Hands in blue gloves placing a tray of cookies into an oven.",
       "imageUrl": "https://picsum.photos/seed/baking/550/367",
       "imageHint": "baking cookies"
+    },
+    {
+      "id": "raw-materials",
+      "description": "Sourcing raw materials.",
+      "imageUrl": "https://picsum.photos/seed/materials/100/100",
+      "imageHint": "raw materials"
     }
   ]
 }

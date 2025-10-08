@@ -1,7 +1,8 @@
+'use client';
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Search, Factory, Leaf } from 'lucide-react';
+import { Search, Factory, Leaf, Layers } from 'lucide-react';
 
 const services = [
   {
@@ -16,6 +17,11 @@ const services = [
     description:
       'We assist businesses in navigating the Kenya Bureau of Standards (KEBS) certification process, ensuring that their products meet local and international quality standards. This support is crucial for compliance and market acceptance.',
   },
+  {
+    icon: Layers,
+    title: 'Raw Material Sourcing and Packaging Material',
+    description: 'We offers guidance on sourcing high-quality raw materials and packaging solutions. Our network of suppliers ensures that businesses have access to sustainable and cost-effective options that enhance product quality and branding.',
+  }
 ];
 
 export function Services() {
@@ -48,7 +54,7 @@ export function Services() {
                   </div>
               )}
             </div>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-10">
               <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden">
                 <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-white/20" />
                 <div className="w-16 h-16 rounded-full bg-white mb-4" />
@@ -57,17 +63,17 @@ export function Services() {
                   This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.
                 </p>
               </div>
-              <div className="grid sm:grid-cols-1 gap-10">
+              <div className="grid sm:grid-cols-2 gap-x-10 gap-y-12">
                   {services.map((service) => (
-                      <div key={service.title} className="flex gap-6 items-start">
+                      <div key={service.title} className="flex flex-col gap-4 items-start">
                           <div className="flex-shrink-0">
-                              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
                                   <service.icon className="w-8 h-8 text-primary" />
                               </div>
                           </div>
                           <div className="space-y-2">
                               <h4 className="text-lg font-bold">{service.title}</h4>
-                              <p className="text-muted-foreground">{service.description}</p>
+                              <p className="text-muted-foreground text-sm">{service.description}</p>
                           </div>
                       </div>
                   ))}
