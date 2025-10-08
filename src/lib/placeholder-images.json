@@ -2,69 +2,69 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A chef preparing food in a kitchen with a white background for text visibility.",
-      "imageUrl": "https://picsum.photos/seed/chefpeel/1920/1080",
-      "imageHint": "chef peeling potatoes"
+      "description": "A chef preparing food in a professional kitchen.",
+      "imageUrl": "https://picsum.photos/seed/chefkitchen/1920/1080",
+      "imageHint": "chef cooking"
     },
     {
       "id": "about-us-image",
-      "description": "A portrait of a smiling artisan holding their craft.",
-      "imageUrl": "https://picsum.photos/seed/somoabout/600/800",
-      "imageHint": "smiling artisan"
+      "description": "A smiling chef holding a freshly baked loaf of bread.",
+      "imageUrl": "https://picsum.photos/seed/chefbread/600/800",
+      "imageHint": "chef bread"
     },
     {
       "id": "who-we-are-image",
-      "description": "Three people in a lab environment discussing something.",
-      "imageUrl": "https://picsum.photos/seed/labdiscuss/600/400",
-      "imageHint": "lab workers discussion"
+      "description": "Three chefs collaborating and discussing a dish in a kitchen.",
+      "imageUrl": "https://picsum.photos/seed/chefsdiscuss/600/400",
+      "imageHint": "chefs discussion"
     },
     {
       "id": "testimonial-feature",
-      "description": "Man in a food production facility working with a large mixing machine.",
-      "imageUrl": "https://picsum.photos/seed/testifeature/500/350",
-      "imageHint": "food production"
+      "description": "Chef working at a stainless steel counter in a commercial kitchen.",
+      "imageUrl": "https://picsum.photos/seed/chefcounter/500/350",
+      "imageHint": "chef working"
     },
     {
       "id": "testimonial-dorells",
-      "description": "Portrait of Aloyce Kimata.",
-      "imageUrl": "https://picsum.photos/seed/person1/300/300",
-      "imageHint": "portrait man"
+      "description": "Portrait of a smiling male chef.",
+      "imageUrl": "https://picsum.photos/seed/chefportrait1/300/300",
+      "imageHint": "male chef"
     },
     {
       "id": "testimonial-chinaza",
-      "description": "Portrait of Hellen Nderi.",
-      "imageUrl": "https://picsum.photos/seed/person2/300/300",
-      "imageHint": "portrait woman"
+      "description": "Portrait of a smiling female chef.",
+      "imageUrl": "https://picsum.photos/seed/chefportrait2/300/300",
+      "imageHint": "female chef"
     },
     {
       "id": "testimonial-momix",
-      "description": "Portrait of Mary Mumbi.",
-      "imageUrl": "https://picsum.photos/seed/person3/300/300",
-      "imageHint": "portrait woman"
+      "description": "Portrait of a female chef tasting a sauce.",
+      "imageUrl": "https://picsum.photos/seed/chefportrait3/300/300",
+      "imageHint": "chef tasting"
     },
     {
       "id": "baking-cookies",
-      "description": "Close-up of gloved hands placing cookies on a baking tray.",
-      "imageUrl": "https://picsum.photos/seed/cookies/550/367",
-      "imageHint": "baking cookies"
+      "description": "Close-up of a chef decorating freshly baked pastries.",
+      "imageUrl": "https://picsum.photos/seed/pastries/550/367",
+      "imageHint": "baking pastries"
     },
     {
       "id": "raw-materials",
-      "description": "Sourcing raw materials.",
-      "imageUrl": "https://picsum.photos/seed/materials/100/100",
-      "imageHint": "raw materials"
+      "description": "Assortment of fresh vegetables and spices on a wooden board.",
+      "imageUrl": "https://picsum.photos/seed/vegetables/100/100",
+      "imageHint": "fresh ingredients"
     },
     {
       "id": "newsletter-image",
-      "description": "Woman in a hairnet and apron mixing ingredients in a bowl in a kitchen.",
-      "imageUrl": "https://picsum.photos/seed/mixing/450/450",
-      "imageHint": "woman mixing"
+      "description": "A chef carefully plating a dish in a bright kitchen.",
+      "imageUrl": "https://picsum.photos/seed/chefplating/450/450",
+      "imageHint": "chef plating"
     },
     {
       "id": "footer-logo",
-      "description": "Circular SOMO logo with a textured yellow background.",
-      "imageUrl": "https://picsum.photos/seed/somologo/150/150",
-      "imageHint": "company logo"
+      "description": "Company logo with a food-related icon.",
+      "imageUrl": "https://picsum.photos/seed/foodlogo/150/150",
+      "imageHint": "food logo"
     }
   ]
 }
