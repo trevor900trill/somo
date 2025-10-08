@@ -7,12 +7,6 @@
       "imageHint": "chef cooking"
     },
     {
-      "id": "about-us-image",
-      "description": "A smiling chef holding a freshly baked loaf of bread.",
-      "imageUrl": "https://picsum.photos/seed/chefbread/600/800",
-      "imageHint": "chef bread"
-    },
-    {
       "id": "who-we-are-image",
       "description": "Three chefs collaborating and discussing a dish in a kitchen.",
       "imageUrl": "https://picsum.photos/seed/chefsdiscuss/600/400",
@@ -26,33 +20,27 @@
     },
     {
       "id": "testimonial-dorells",
-      "description": "Portrait of a smiling male chef.",
-      "imageUrl": "https://picsum.photos/seed/chefportrait1/300/300",
-      "imageHint": "male chef"
+      "description": "Portrait of a smiling male.",
+      "imageUrl": "https://picsum.photos/seed/portrait1/300/300",
+      "imageHint": "male portrait"
     },
     {
       "id": "testimonial-chinaza",
-      "description": "Portrait of a smiling female chef.",
-      "imageUrl": "https://picsum.photos/seed/chefportrait2/300/300",
-      "imageHint": "female chef"
+      "description": "Portrait of a smiling female.",
+      "imageUrl": "https://picsum.photos/seed/portrait2/300/300",
+      "imageHint": "female portrait"
     },
     {
       "id": "testimonial-momix",
-      "description": "Portrait of a female chef tasting a sauce.",
-      "imageUrl": "https://picsum.photos/seed/chefportrait3/300/300",
-      "imageHint": "chef tasting"
+      "description": "Portrait of a person tasting a sauce.",
+      "imageUrl": "https://picsum.photos/seed/portrait3/300/300",
+      "imageHint": "person tasting"
     },
     {
       "id": "baking-cookies",
       "description": "Close-up of a chef decorating freshly baked pastries.",
       "imageUrl": "https://picsum.photos/seed/pastries/550/367",
       "imageHint": "baking pastries"
-    },
-    {
-      "id": "raw-materials",
-      "description": "Assortment of fresh vegetables and spices on a wooden board.",
-      "imageUrl": "https://picsum.photos/seed/vegetables/100/100",
-      "imageHint": "fresh ingredients"
     },
     {
       "id": "newsletter-image",
