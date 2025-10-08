@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -8,83 +8,111 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Button } from "./ui/button";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    id: "testimonial-1",
-    name: "Amina Yusuf",
-    title: "Potter",
-    quote: "Somo Hub transformed my small hobby into a real business. The training and access to materials were game-changers for me.",
+    id: "testimonial-dorells",
+    name: "Aloyce Kimata - Dorell's Entreprise",
+    quote: "It saved me from overheads like electricity and water. This has sustained my business to this day.",
   },
   {
-    id: "testimonial-2",
-    name: "David Chen",
-    title: "Woodworker",
-    quote: "Finding a market for my work was always the hardest part. Somo Hub connected me with buyers I could never have reached on my own.",
+    id: "testimonial-chinaza",
+    name: "Hellen Nderi - Chinaza Sprout",
+    quote: "Chinaza Sprouts is growing stronger every day, from our creative designs to the way we connect with customers.",
   },
   {
-    id: "testimonial-3",
-    name: "Maria Garcia",
-    title: "Jewelry Designer",
-    quote: "The community at Somo Hub is incredible. It's so inspiring to be surrounded by other talented artisans and supportive staff.",
+    id: "testimonial-momix",
+    name: "Mary Mumbi - Momix",
+    quote: "Momix is growing stronger every day, from the expertise development services offered, we connect with customers.",
+  },
+  {
+    id: "testimonial-dorells",
+    name: "Aloyce Kimata - Dorell's Entreprise",
+    quote: "It saved me from overheads like electricity and water. This has sustained my business to this day.",
   },
 ];
 
 export function Testimonials() {
+  const featureImage = PlaceHolderImages.find(p => p.id === 'testimonial-feature');
+
   return (
-    <section id="testimonials" className="w-full py-16 md:py-24 lg:py-32">
+    <section id="testimonials" className="w-full py-12 md:py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="inline-block rounded-lg bg-accent/20 px-3 py-1 text-sm font-medium text-accent-foreground/80">
-            Testimonials
-          </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-            From Our Community
-          </h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            Hear what artisans are saying about their experience with Somo Hub.
-          </p>
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
+            {featureImage && (
+                <div className="flex justify-center">
+                    <Image
+                        src={featureImage.imageUrl}
+                        alt={featureImage.description}
+                        width={500}
+                        height={350}
+                        className="rounded-2xl object-cover shadow-lg"
+                        data-ai-hint={featureImage.imageHint}
+                    />
+                </div>
+            )}
+            <div className="space-y-4">
+                <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-4xl">
+                    Testimonials
+                </h2>
+                <p className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+                    500+ Happy Clients Said To US They Are Satisfied
+                </p>
+            </div>
         </div>
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-5xl mx-auto"
-        >
-          <CarouselContent>
-            {testimonials.map((testimonial) => {
-              const image = PlaceHolderImages.find(p => p.id === testimonial.id);
-              return (
-                <CarouselItem key={testimonial.id} className="md:basis-1/2">
-                  <div className="p-4">
-                    <Card className="h-full shadow-lg bg-background">
-                      <CardContent className="flex flex-col justify-between items-start gap-6 p-8 h-full">
-                        <blockquote className="text-lg italic leading-relaxed text-foreground/80 border-l-4 border-accent pl-4">
-                          “{testimonial.quote}”
-                        </blockquote>
-                        <div className="flex items-center gap-4 pt-4">
-                          <Avatar className="h-14 w-14">
-                            {image && <AvatarImage src={image.imageUrl} alt={testimonial.name} data-ai-hint={image.imageHint} />}
-                            <AvatarFallback>{testimonial.name.split(' ').map(n=>n[0]).join('')}</AvatarFallback>
-                          </Avatar>
-                          <div>
-                            <p className="font-bold">{testimonial.name}</p>
-                            <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                          </div>
+
+        <div className="relative mt-12">
+            <Carousel
+                opts={{
+                    align: "start",
+                    loop: true,
+                }}
+                className="w-full"
+            >
+                <CarouselContent className="-ml-4">
+                {testimonials.map((testimonial, index) => {
+                    const image = PlaceHolderImages.find(p => p.id === testimonial.id);
+                    return (
+                    <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                        <div className="h-full">
+                            <div className="relative flex flex-col justify-end text-white p-6 rounded-2xl h-full testimonial-card-gradient min-h-[300px] overflow-hidden">
+                                {image && (
+                                    <Image
+                                        src={image.imageUrl}
+                                        alt={testimonial.name}
+                                        fill
+                                        className="absolute inset-0 object-cover -z-10"
+                                        data-ai-hint={image.imageHint}
+                                    />
+                                )}
+                                <div className="absolute inset-0 bg-black/20 -z-10" />
+                                <div className="relative z-10">
+                                    <h3 className="font-bold text-lg">{testimonial.name}</h3>
+                                    <p className="text-sm text-white/80 mt-2">"{testimonial.quote}"</p>
+                                </div>
+                            </div>
                         </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              );
-            })}
-          </CarouselContent>
-          <CarouselPrevious className="hidden sm:flex" />
-          <CarouselNext className="hidden sm:flex" />
-        </Carousel>
+                    </CarouselItem>
+                    );
+                })}
+                </CarouselContent>
+                <CarouselPrevious className="absolute -left-4 top-1/2 -translate-y-1/2 h-10 w-10 bg-white border-primary text-primary border-2">
+                    <ArrowLeft className="h-6 w-6"/>
+                </CarouselPrevious>
+                <CarouselNext className="absolute -right-4 top-1/2 -translate-y-1/2 h-10 w-10 bg-white border-primary text-primary border-2">
+                    <ArrowRight className="h-6 w-6"/>
+                </CarouselNext>
+            </Carousel>
+        </div>
+        <div className="text-center mt-12">
+            <Button asChild size="lg" variant="outline" className="rounded-sm border-2 border-foreground">
+                <Link href="#">See more</Link>
+            </Button>
+        </div>
       </div>
     </section>
   );

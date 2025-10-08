@@ -19,22 +19,28 @@
       "imageHint": "lab workers discussion"
     },
     {
-      "id": "testimonial-1",
-      "description": "Portrait of a person.",
-      "imageUrl": "https://picsum.photos/seed/person1/100/100",
-      "imageHint": "portrait person"
+      "id": "testimonial-feature",
+      "description": "Man in a food production facility working with a large mixing machine.",
+      "imageUrl": "https://picsum.photos/seed/testifeature/500/350",
+      "imageHint": "food production"
     },
     {
-      "id": "testimonial-2",
-      "description": "Portrait of another person.",
-      "imageUrl": "https://picsum.photos/seed/person2/100/100",
-      "imageHint": "portrait person"
+      "id": "testimonial-dorells",
+      "description": "Portrait of Aloyce Kimata.",
+      "imageUrl": "https://picsum.photos/seed/person1/300/300",
+      "imageHint": "portrait man"
     },
     {
-      "id": "testimonial-3",
-      "description": "Portrait of a third person.",
-      "imageUrl": "https://picsum.photos/seed/person3/100/100",
-      "imageHint": "portrait person"
+      "id": "testimonial-chinaza",
+      "description": "Portrait of Hellen Nderi.",
+      "imageUrl": "https://picsum.photos/seed/person2/300/300",
+      "imageHint": "portrait woman"
+    },
+    {
+      "id": "testimonial-momix",
+      "description": "Portrait of Mary Mumbi.",
+      "imageUrl": "https://picsum.photos/seed/person3/300/300",
+      "imageHint": "portrait woman"
     },
     {
       "id": "baking-cookies",
