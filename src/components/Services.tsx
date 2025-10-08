@@ -31,7 +31,7 @@ export function Services() {
     <section id="services" className="w-full py-16 md:py-24 lg:py-32 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-secondary/50 rounded-[4rem] p-8 md:p-12 lg:p-16">
-          <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-start">
             <div className="flex flex-col gap-8">
               <div className="space-y-4">
                   <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-foreground">
@@ -54,31 +54,33 @@ export function Services() {
                   </div>
               )}
             </div>
-            <div className="relative md:-mt-24">
-              <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden">
-                <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-white/20" />
-                <div className="w-16 h-16 rounded-full bg-white mb-4" />
-                <h3 className="text-xl font-bold">Pay-Per-Use Machines</h3>
-                <p className="text-primary-foreground/90">
-                  This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.
-                </p>
-              </div>
+            <div className="grid grid-cols-1 gap-8">
+                <div className="relative md:-mt-32">
+                    <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden">
+                        <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-white/20" />
+                        <div className="w-16 h-16 rounded-full bg-white mb-4" />
+                        <h3 className="text-xl font-bold">Pay-Per-Use Machines</h3>
+                        <p className="text-primary-foreground/90">
+                        This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.
+                        </p>
+                    </div>
+                </div>
+                 <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                    {otherServices.map((service) => (
+                        <div key={service.title} className="flex flex-col items-center text-center sm:items-start sm:text-left gap-4">
+                            <div className="flex-shrink-0">
+                                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
+                                    <service.icon className="w-8 h-8 text-primary" />
+                                </div>
+                            </div>
+                            <div className="space-y-2">
+                                <h4 className="text-lg font-bold">{service.title}</h4>
+                                <p className="text-muted-foreground text-sm">{service.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-          </div>
-          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {otherServices.map((service) => (
-                  <div key={service.title} className="flex flex-col items-center text-center sm:items-start sm:text-left gap-4">
-                      <div className="flex-shrink-0">
-                          <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
-                              <service.icon className="w-8 h-8 text-primary" />
-                          </div>
-                      </div>
-                      <div className="space-y-2">
-                          <h4 className="text-lg font-bold">{service.title}</h4>
-                          <p className="text-muted-foreground text-sm">{service.description}</p>
-                      </div>
-                  </div>
-              ))}
           </div>
         </div>
       </div>
