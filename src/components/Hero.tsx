@@ -11,7 +11,7 @@ export function Hero() {
 
   return (
     <section className="relative h-screen min-h-[700px] w-full flex items-center justify-start pt-20">
-      <div className="absolute inset-0 bg-white/30 z-10" />
+      <div className="absolute inset-0 bg-white/70 z-10" />
       <Image
         src={heroImage.imageUrl}
         alt={heroImage.description}

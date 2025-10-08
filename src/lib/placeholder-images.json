@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A chef peeling potatoes in a professional kitchen.",
-      "imageUrl": "https://picsum.photos/seed/chefpeelingpotatoes/1920/1080",
-      "imageHint": "chef peeling potatoes"
+      "description": "A chef preparing food in a kitchen.",
+      "imageUrl": "https://picsum.photos/seed/cheflife/1920/1080",
+      "imageHint": "chef kitchen"
     },
     {
       "id": "about-us-image",
