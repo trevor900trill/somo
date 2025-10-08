@@ -28,7 +28,7 @@ export function Services() {
   const servicesImage = PlaceHolderImages.find((p) => p.id === 'baking-cookies');
 
   return (
-    <section id="services" className="w-full py-16 md:py-24 lg:py-32 bg-background">
+    <section id="services" className="w-full py-16 md:py-24 lg:py-32 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-secondary/50 rounded-[4rem] p-8 md:p-12 lg:p-16">
           <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
