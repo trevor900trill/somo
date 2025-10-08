@@ -55,7 +55,7 @@ export function Services() {
               )}
             </div>
             <div className="grid md:grid-cols-2 gap-8 items-start">
-              <div className="relative md:-mt-24">
+              <div className="relative lg:-mt-24">
                 <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden h-full">
                     <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-white/20" />
                     <div className="w-16 h-16 rounded-full bg-white mb-4 flex items-center justify-center">
