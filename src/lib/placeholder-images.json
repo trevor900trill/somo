@@ -2,21 +2,21 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A chef preparing food in a professional kitchen.",
-      "imageUrl": "https://picsum.photos/seed/chefkitchen/1920/1080",
+      "description": "A chef meticulously preparing a dish in a professional kitchen setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c9f?q=80&w=1920&h=1080&fit=crop",
       "imageHint": "chef cooking"
     },
     {
       "id": "who-we-are-image",
-      "description": "Three chefs collaborating and discussing a dish in a kitchen.",
-      "imageUrl": "https://picsum.photos/seed/chefsdiscuss/600/400",
+      "description": "A team of chefs working together in a modern, well-lit kitchen.",
+      "imageUrl": "https://images.unsplash.com/photo-1621947081722-775b75b9b6a4?q=80&w=600&h=400&fit=crop",
       "imageHint": "chefs discussion"
     },
     {
       "id": "testimonial-feature",
-      "description": "Chef working at a stainless steel counter in a commercial kitchen.",
-      "imageUrl": "https://picsum.photos/seed/chefcounter/500/350",
-      "imageHint": "chef working"
+      "description": "Close-up of a chef's hands artfully garnishing a gourmet dish.",
+      "imageUrl": "https://images.unsplash.com/photo-1565299585323-21d1d143a888?q=80&w=500&h=350&fit=crop",
+      "imageHint": "chef plating"
     },
     {
       "id": "testimonial-dorells",
@@ -38,15 +38,15 @@
     },
     {
       "id": "baking-cookies",
-      "description": "Close-up of a chef decorating freshly baked pastries.",
-      "imageUrl": "https://picsum.photos/seed/pastries/550/367",
-      "imageHint": "baking pastries"
+      "description": "A chef dusting flour over a freshly prepared dough on a wooden board.",
+      "imageUrl": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=550&h=367&fit=crop",
+      "imageHint": "chef baking"
     },
     {
       "id": "newsletter-image",
-      "description": "A chef carefully plating a dish in a bright kitchen.",
-      "imageUrl": "https://picsum.photos/seed/chefplating/450/450",
-      "imageHint": "chef plating"
+      "description": "A chef smiling while holding a freshly baked loaf of bread.",
+      "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=450&h=450&fit=crop",
+      "imageHint": "chef smiling"
     },
     {
       "id": "footer-logo",
