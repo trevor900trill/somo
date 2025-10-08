@@ -1,28 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ArrowRightCircle } from "lucide-react";
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
-
-  if (!heroImage) return null;
-
   return (
-    <section className="relative h-screen min-h-[700px] w-full flex items-center justify-start pt-20">
-      <div className="absolute inset-0 bg-white/70 z-10" />
-      <Image
-        src={heroImage.imageUrl}
-        alt={heroImage.description}
-        fill
-        className="object-cover"
-        priority
-        data-ai-hint={heroImage.imageHint}
-      />
-      <div className="container relative z-20 mx-auto px-4 md:px-6 text-left">
-        <div className="max-w-xl flex flex-col items-start space-y-6">
-          <h1 className="text-5xl font-headline font-bold tracking-tight text-primary md:text-7xl lg:text-8xl">
+    <section className="w-full pt-48 pb-24 md:pt-56 md:pb-32">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="max-w-2xl flex flex-col items-start space-y-8">
+          <h1 className="text-6xl font-headline font-bold tracking-tight text-primary md:text-7xl lg:text-8xl">
             CIRCULAR SHARED PRODUCTION HUB
           </h1>
           <p className="text-lg md:text-xl text-foreground/90">
