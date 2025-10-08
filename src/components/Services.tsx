@@ -63,7 +63,7 @@ export function Services() {
                   This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.
                 </p>
               </div>
-              <div className="space-y-10">
+              <div className="grid sm:grid-cols-1 gap-10">
                   {services.map((service) => (
                       <div key={service.title} className="flex gap-6 items-start">
                           <div className="flex-shrink-0">
