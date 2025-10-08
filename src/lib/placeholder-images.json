@@ -53,6 +53,12 @@
       "description": "Sourcing raw materials.",
       "imageUrl": "https://picsum.photos/seed/materials/100/100",
       "imageHint": "raw materials"
+    },
+    {
+      "id": "newsletter-image",
+      "description": "Woman in a hairnet and apron mixing ingredients in a bowl in a kitchen.",
+      "imageUrl": "https://picsum.photos/seed/mixing/450/450",
+      "imageHint": "woman mixing"
     }
   ]
 }
