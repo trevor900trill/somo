@@ -16,12 +16,6 @@ const services = [
     description:
       'We assist businesses in navigating the Kenya Bureau of Standards (KEBS) certification process, ensuring that their products meet local and international quality standards. This support is crucial for compliance and market acceptance.',
   },
-  {
-    icon: Leaf,
-    title: 'Raw Material Sourcing and Packaging Material',
-    description:
-      'We offers guidance on sourcing high-quality raw materials and packaging solutions. Our network of suppliers ensures that businesses have access to sustainable and cost-effective options that enhance product quality and branding.',
-  },
 ];
 
 export function Services() {
