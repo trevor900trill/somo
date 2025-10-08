@@ -9,13 +9,13 @@
     {
       "id": "who-we-are-image",
       "description": "A team of chefs working together in a modern, well-lit kitchen.",
-      "imageUrl": "https://images.unsplash.com/photo-1621947081722-775b75b9b6a4?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=600&h=400&fit=crop",
       "imageHint": "chefs discussion"
     },
     {
       "id": "testimonial-feature",
       "description": "Close-up of a chef's hands artfully garnishing a gourmet dish.",
-      "imageUrl": "https://images.unsplash.com/photo-1565299585323-21d1d143a888?q=80&w=500&h=350&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1600565193348-f74d3c2726a4?q=80&w=500&h=350&fit=crop",
       "imageHint": "chef plating"
     },
     {
