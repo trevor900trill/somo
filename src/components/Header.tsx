@@ -23,35 +23,37 @@ export function Header() {
           <span className="text-2xl font-bold tracking-tight text-primary">SOMO</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
-              prefetch={false}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="flex items-center gap-6">
+            <nav className="hidden items-center gap-6 md:flex">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+                  prefetch={false}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
 
-        <div className="flex items-center gap-4">
-          <Button asChild className="hidden md:inline-flex rounded-sm">
-            <Link href="#">
-              <ShoppingCart className="mr-2 h-4 w-4" />
-              Shop Now
-            </Link>
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+            <div className="flex items-center gap-4">
+              <Button asChild className="hidden md:inline-flex rounded-sm">
+                <Link href="#">
+                  <ShoppingCart className="mr-2 h-4 w-4" />
+                  Shop Now
+                </Link>
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="md:hidden"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle menu"
+              >
+                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
         </div>
       </div>
 
