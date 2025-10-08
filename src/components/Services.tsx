@@ -28,13 +28,13 @@ export function Services() {
   const servicesImage = PlaceHolderImages.find((p) => p.id === 'baking-cookies');
 
   return (
-    <section id="services" className="w-full py-12 md:py-16 lg:py-20 bg-white">
+    <section id="services" className="w-full py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="bg-secondary/50 rounded-[4rem] p-8 md:p-12 lg:p-16">
+        <div className="bg-secondary rounded-3xl p-8 md:p-12 lg:p-16">
           <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-start">
             <div className="flex flex-col gap-8">
               <div className="space-y-4">
-                  <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-foreground">
+                  <h2 className="text-6xl md:text-7xl font-headline font-bold tracking-tighter text-foreground">
                       Services We <span className="text-primary">Provide</span>
                   </h2>
                   <p className="text-muted-foreground md:text-lg">
@@ -61,7 +61,7 @@ export function Services() {
                     <div className="w-16 h-16 rounded-full bg-white mb-4 flex items-center justify-center">
                       {/* Icon can go here if needed */}
                     </div>
-                    <h3 className="text-xl font-bold">Pay-Per-Use Machines</h3>
+                    <h3 className="text-2xl font-bold font-headline">Pay-Per-Use Machines</h3>
                     <p className="text-primary-foreground/90 text-sm">
                     This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. We offer entrepreneurs industrial-grade manufacturing equipment through a processing-as-a-service model.
                     </p>

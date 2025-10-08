@@ -22,7 +22,7 @@ export function Hero() {
       />
       <div className="container relative z-20 mx-auto px-4 md:px-6 text-left">
         <div className="max-w-xl flex flex-col items-start space-y-6">
-          <h1 className="text-4xl font-bold tracking-tight text-primary md:text-6xl lg:text-7xl">
+          <h1 className="text-5xl font-headline font-bold tracking-tight text-primary md:text-7xl lg:text-8xl">
             CIRCULAR SHARED PRODUCTION HUB
           </h1>
           <p className="text-lg md:text-xl text-foreground/90">

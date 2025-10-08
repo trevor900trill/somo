@@ -31,13 +31,13 @@ export function Newsletter() {
   if (!newsletterImage) return null;
 
   return (
-    <section id="newsletter" className="w-full py-12 md:py-16 lg:py-20 bg-white">
+    <section id="newsletter" className="w-full py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="bg-secondary/30 rounded-3xl p-8 md:p-12 lg:p-16">
+        <div className="bg-secondary rounded-3xl p-8 md:p-12 lg:p-16">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-2 space-y-6">
-              <p className="text-primary font-semibold">Subscribe Now</p>
-              <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+              <p className="text-primary font-semibold font-headline text-2xl">Subscribe Now</p>
+              <h2 className="text-6xl md:text-7xl font-headline font-bold tracking-tight text-foreground">
                 Subscriber To <span className="text-primary">Our</span> Newsletter
               </h2>
               <form 
@@ -63,7 +63,7 @@ export function Newsletter() {
                   src={newsletterImage.imageUrl}
                   alt={newsletterImage.description}
                   fill
-                  className="rounded-2xl object-cover"
+                  className="rounded-2xl object-cover shadow-lg"
                   data-ai-hint={newsletterImage.imageHint}
                 />
               </div>

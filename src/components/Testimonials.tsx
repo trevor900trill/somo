@@ -40,7 +40,7 @@ export function Testimonials() {
   const featureImage = PlaceHolderImages.find(p => p.id === 'testimonial-feature');
 
   return (
-    <section id="testimonials" className="w-full py-12 md:py-16 lg:py-20 bg-white">
+    <section id="testimonials" className="w-full py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
             {featureImage && (
@@ -56,10 +56,10 @@ export function Testimonials() {
                 </div>
             )}
             <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-4xl">
+                <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-4xl font-headline">
                     Testimonials
                 </h2>
-                <p className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+                <p className="text-5xl font-bold tracking-tight text-foreground sm:text-6xl font-headline">
                     500+ Happy Clients Said To US They Are Satisfied
                 </p>
             </div>
@@ -79,7 +79,7 @@ export function Testimonials() {
                     return (
                     <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                         <div className="h-full">
-                            <div className="relative flex flex-col justify-end text-white p-6 rounded-2xl h-full testimonial-card-gradient min-h-[300px] overflow-hidden">
+                            <div className="relative flex flex-col justify-end text-white p-6 rounded-2xl h-full min-h-[300px] overflow-hidden shadow-lg">
                                 {image && (
                                     <Image
                                         src={image.imageUrl}
@@ -89,7 +89,7 @@ export function Testimonials() {
                                         data-ai-hint={image.imageHint}
                                     />
                                 )}
-                                <div className="absolute inset-0 bg-black/20 -z-10" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent -z-10" />
                                 <div className="relative z-10">
                                     <h3 className="font-bold text-lg">{testimonial.name}</h3>
                                     <p className="text-sm text-white/80 mt-2">"{testimonial.quote}"</p>

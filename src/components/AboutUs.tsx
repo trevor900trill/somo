@@ -29,7 +29,7 @@ export function AboutUs() {
   if (!aboutImage) return null;
 
   return (
-    <section id="about" className="w-full py-12 md:py-16 lg:py-20 bg-white">
+    <section id="about" className="w-full py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
         <div className="flex items-center justify-center">
@@ -43,7 +43,7 @@ export function AboutUs() {
             />
           </div>
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="text-6xl md:text-7xl font-headline font-bold tracking-tight">
               <span className="text-primary">Who</span> We Are?
             </h2>
             <p className="text-muted-foreground md:text-lg">
