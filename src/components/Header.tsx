@@ -12,7 +12,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "#services", label: "Services" },
-  { href: "#facility", label: "Our Facility" },
+  { href: "#location", label: "Our Facility" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
@@ -55,7 +55,7 @@ export function Header() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={cn("text-sm font-medium transition-colors hover:text-foreground", isScrolled || isMenuOpen ? "text-foreground" : "text-foreground/80")}
+                  className={cn("text-sm font-medium transition-colors hover:text-foreground", isScrolled || isMenuOpen ? "text-foreground" : "text-white")}
                   prefetch={false}
                 >
                   {link.label}

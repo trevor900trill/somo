@@ -21,7 +21,7 @@ const companyLinks = [
 const contactLinks = [
   { href: "tel:+254729243881", text: "+254 729 243 881" },
   { href: "https://www.somoafrica.org", text: "www.somoafrica.org" },
-  { href: "#contact", text: "Contact Us" },
+  { href: "#location", text: "Find Us" },
   { href: "#", text: "Terms Of Service" },
 ];
 
