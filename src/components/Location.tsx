@@ -36,7 +36,7 @@ export function Location() {
           <div className="flex items-center justify-center">
             <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.923835255406!2d36.95842837592477!3d-1.2132644355546552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f3c3f3e3f3d%3A0x8e6e4f3c3f3e3f3d!2sTengeneza%20Na%20Somo!5e0!3m2!1sen!2ske!4v1721741548235!5m2!1sen!2ske"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.948833324838!2d36.96729407496556!3d-1.1395097290625946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3fb094199525%3A0x6292318f7639c314!2sSomo%20Africa!5e0!3m2!1sen!2ske!4v1721831115598!5m2!1sen!2ske"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
