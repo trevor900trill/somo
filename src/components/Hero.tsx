@@ -29,10 +29,10 @@ export function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <Button asChild size="lg" className="rounded-sm">
-              <Link href="#">Book A Session</Link>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe-aGTobKLbQcikibwjluTWEGvQbh7BZITQsw-uFuw40U3AxQ/viewform?vc=0&c=0&w=1&flr=0" target="_blank">Book A Session</Link>
             </Button>
             <Button asChild size="lg" variant="link" className="text-foreground">
-              <Link href="#">Contact Us <ArrowRightCircle className="ml-2" /></Link>
+              <Link href="#contact">Contact Us <ArrowRightCircle className="ml-2" /></Link>
             </Button>
           </div>
         </div>

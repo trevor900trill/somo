@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -5,6 +6,8 @@ import Link from "next/link";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -17,6 +20,8 @@ const navLinks = [
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const headerLogo = PlaceHolderImages.find(p => p.id === 'footer-logo');
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +38,15 @@ export function Header() {
     )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <span className="text-3xl font-bold tracking-tight text-primary font-headline">SOMO</span>
+          {headerLogo && (
+            <Image 
+              src={headerLogo.imageUrl}
+              alt={headerLogo.description}
+              width={100}
+              height={100}
+              className="h-12 w-auto"
+            />
+          )}
         </Link>
 
         <div className="flex items-center gap-6">
@@ -42,7 +55,7 @@ export function Header() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={cn("text-sm font-medium transition-colors hover:text-foreground", isScrolled ? "text-foreground/80" : "text-foreground")}
+                  className={cn("text-sm font-medium transition-colors hover:text-foreground", isScrolled || isMenuOpen ? "text-foreground" : "text-foreground/80")}
                   prefetch={false}
                 >
                   {link.label}
@@ -52,7 +65,7 @@ export function Header() {
 
             <div className="flex items-center gap-4">
               <Button asChild className="hidden md:inline-flex rounded-sm">
-                <Link href="#">
+                <Link href="https://shop.somoafrica.org/_/" target="_blank">
                   <ShoppingCart className="mr-2 h-4 w-4" />
                   Shop Now
                 </Link>
@@ -87,7 +100,7 @@ export function Header() {
               ))}
             </nav>
             <Button asChild className="rounded-sm">
-              <Link href="#" onClick={() => setIsMenuOpen(false)}>
+              <Link href="https://shop.somoafrica.org/_/" target="_blank" onClick={() => setIsMenuOpen(false)}>
                 <ShoppingCart className="mr-2 h-4 w-4" />
                 Shop Now
               </Link>
