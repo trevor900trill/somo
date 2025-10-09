@@ -16,7 +16,7 @@ export default function Home() {
         <Services />
         <AboutUs />
         <Testimonials />
-        <div className="relative">
+        <div>
           <Location />
         </div>
         <Newsletter />
