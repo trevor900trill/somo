@@ -6,7 +6,7 @@ export function Location() {
     <section id="location" className="w-full py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
-          <div className="space-y-6">
+          <div className="space-y-4">
             <h2 className="text-6xl md:text-7xl font-headline font-bold tracking-tight">
               <span className="text-primary">Find</span> Us
             </h2>
