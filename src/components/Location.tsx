@@ -13,19 +13,6 @@ const WavyDivider = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const WavyDividerBottom = ({ className }: { className?: string }) => (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 100"
-      preserveAspectRatio="none"
-      fill="currentColor"
-    >
-      <path d="M0 0H1440V100C1440 100 1236.6 10.5 720 10.5S0 100 0 100V0z" />
-    </svg>
-  );
-
-
 export function Location() {
   return (
     <section id="location" className="relative w-full bg-secondary text-foreground">
@@ -78,7 +65,6 @@ export function Location() {
                 </div>
             </div>
       </div>
-      <WavyDividerBottom className="absolute bottom-0 left-0 w-full h-12 md:h-16 lg:h-20 translate-y-full text-secondary" />
     </section>
   );
 }

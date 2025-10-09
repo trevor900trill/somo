@@ -17,7 +17,7 @@ export default function Home() {
         <AboutUs />
         <Testimonials />
         <Location />
-        <div className="mt-20">
+        <div>
           <Newsletter />
         </div>
       </main>      
