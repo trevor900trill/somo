@@ -16,10 +16,10 @@ export default function Home() {
         <Services />
         <AboutUs />
         <Testimonials />
-        <div>
-          <Location />
+        <Location />
+        <div className="mt-20">
+          <Newsletter />
         </div>
-        <Newsletter />
       </main>      
       <Footer />
     </div>
