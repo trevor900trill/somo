@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Instagram, Facebook, Twitter, Youtube } from "lucide-react";
+import { Instagram, Facebook, X, Youtube } from "lucide-react";
 
 const serviceLinks = [
   { href: "#", text: "Technical Training" },
@@ -28,7 +28,7 @@ const contactLinks = [
 const socialLinks = [
     { href: "#", icon: Instagram },
     { href: "#", icon: Facebook },
-    { href: "#", icon: Twitter },
+    { href: "#", icon: X },
     { href: "#", icon: Youtube },
 ]
 
