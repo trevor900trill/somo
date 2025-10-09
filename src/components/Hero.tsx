@@ -19,13 +19,18 @@ export function Hero() {
           priority
         />
       )}
-      <div className="relative container mx-auto px-4 md:px-6">
+      <div className="relative container mx-auto px-4 md:px-6 z-10">
         <div className="max-w-2xl flex flex-col items-start space-y-8">
-          <h1 className="text-6xl font-headline font-bold tracking-tight text-primary md:text-7xl lg:text-8xl">
-            CIRCULAR SHARED PRODUCTION HUB
-          </h1>
+        <div className="space-y-4">
+            <h1 className="text-6xl font-headline font-bold tracking-tight text-primary md:text-7xl lg:text-8xl">
+              Tengeneza na Somo
+            </h1>
+            <p className="text-2xl md:text-3xl font-bold text-foreground">
+              Circular Shared Production Hubs
+            </p>
+          </div>
           <p className="text-lg md:text-xl text-foreground/80">
-            Providing entrepreneurs and small businesses with affordable, pay-per-use access to professional-grade manufacturing equipment. Our hubs eliminate the traditional barriers of high capital investment, making quality production accessible to everyone.
+            Our hubs eliminate the traditional barriers of high capital investment, making quality production accessible to everyone and reducing post harvest losses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <Button asChild size="lg" className="rounded-sm">
