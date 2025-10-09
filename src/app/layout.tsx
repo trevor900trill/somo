@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Somo Hub',
+  title: 'Tengeneza na Somo',
   description: 'Empowering Artisans, Building Futures',
 };
 
