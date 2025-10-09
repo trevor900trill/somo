@@ -38,10 +38,10 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
   );
 
 const socialLinks = [
-    { href: "#", icon: Instagram },
-    { href: "#", icon: Facebook },
-    { href: "#", icon: XIcon },
-    { href: "#", icon: Youtube },
+    { href: "https://www.instagram.com/tengenezanasomo?igsh=MTk3OHd1MndoNDRmcw==", icon: Instagram },
+    { href: "https://www.facebook.com/share/17TjbNCjc9/", icon: Facebook },
+    { href: "https://x.com/somo_org?t=kLoI6SUwJyaxUmuNFTCeMw&s=09", icon: XIcon },
+    { href: "https://www.youtube.com/@somo4127", icon: Youtube },
 ]
 
 export function Footer() {
@@ -105,7 +105,7 @@ export function Footer() {
         <div className="mt-8 pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-4">
                 {socialLinks.map((link, index) => (
-                    <Link key={index} href={link.href} className="text-primary hover:text-primary/80">
+                    <Link key={index} href={link.href} className="text-primary hover:text-primary/80" target="_blank" rel="noopener noreferrer">
                         <link.icon className="w-6 h-6" />
                     </Link>
                 ))}
