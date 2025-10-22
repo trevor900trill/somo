@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -55,10 +56,10 @@ export function Services() {
               )}
             </div>
             <div className="grid md:grid-cols-2 gap-8 items-start">
-              <div className="relative md:-mt-24">
-                <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden h-full">
+              <div className="relative md:-mt-24 group">
+                <div className="bg-primary text-primary-foreground p-8 rounded-3xl shadow-2xl space-y-4 relative overflow-hidden h-full transition-all duration-300 group-hover:scale-105">
                     <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-white/20" />
-                    <div className="w-16 h-16 rounded-full bg-white mb-4 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-white mb-4 flex items-center justify-center transition-colors duration-300">
                       {/* Icon can go here if needed */}
                     </div>
                     <h3 className="text-2xl font-bold font-headline">Pay-Per-Use Machines</h3>
@@ -68,10 +69,10 @@ export function Services() {
                 </div>
               </div>
               {otherServices.map((service) => (
-                  <div key={service.title} className="flex flex-col items-start text-left gap-4">
+                  <div key={service.title} className="group flex flex-col items-start text-left gap-4 p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:bg-white hover:shadow-xl">
                       <div className="flex-shrink-0">
-                          <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
-                              <service.icon className="w-8 h-8 text-primary" />
+                          <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md transition-colors duration-300 group-hover:bg-primary">
+                              <service.icon className="w-8 h-8 text-primary transition-colors duration-300 group-hover:text-white" />
                           </div>
                       </div>
                       <div className="space-y-2">
