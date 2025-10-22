@@ -10,7 +10,7 @@ export function Hero() {
         src="/images/hero-background.png"
         alt="A chef standing on the right against a bright, whitish kitchen background, with empty space on the left."
         fill
-        className="object-cover object-center"
+        className="object-cover object-top"
         data-ai-hint="chef cooking"
         priority
       />
