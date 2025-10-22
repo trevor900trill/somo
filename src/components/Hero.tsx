@@ -17,7 +17,7 @@ export function Hero() {
       <div className="relative container mx-auto px-4 md:px-6 z-10">
         <div className="max-w-2xl flex flex-col items-start space-y-8">
           <div className="space-y-4">
-            <h1 className="text-6xl font-headline font-bold tracking-tight text-primary md:text-7xl lg:text-8xl">
+            <h1 className="text-4xl font-headline font-bold tracking-tight text-primary md:text-5xl lg:text-6xl">
               Tengeneza na Somo
             </h1>
             <p className="text-2xl md:text-3xl font-bold text-foreground">

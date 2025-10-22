@@ -43,7 +43,7 @@ export function AboutUs() {
             />
           </div>
           <div className="space-y-6">
-            <h2 className="text-6xl md:text-7xl font-headline font-bold tracking-tight">
+            <h2 className="text-4xl font-headline font-bold tracking-tight">
               <span className="text-primary">Who</span> We Are?
             </h2>
             <p className="text-muted-foreground md:text-lg">

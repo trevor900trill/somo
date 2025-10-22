@@ -21,7 +21,7 @@ export function Location() {
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div className="space-y-4">
-                        <h2 className="text-6xl md:text-7xl font-headline font-bold tracking-tight">
+                        <h2 className="text-4xl font-headline font-bold tracking-tight">
                             <span className="text-primary">Find</span> Us
                         </h2>
                         <div className="space-y-4 text-muted-foreground">

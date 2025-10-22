@@ -35,7 +35,7 @@ export function Services() {
           <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-start">
             <div className="flex flex-col gap-8">
               <div className="space-y-4">
-                  <h2 className="text-6xl md:text-7xl font-headline font-bold tracking-tighter text-foreground">
+                  <h2 className="text-4xl font-headline font-bold tracking-tighter text-foreground">
                       Services We <span className="text-primary">Provide</span>
                   </h2>
                   <p className="text-muted-foreground md:text-lg">

@@ -59,7 +59,7 @@ export function Testimonials() {
                 <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-4xl font-headline">
                     Testimonials
                 </h2>
-                <p className="text-5xl font-bold tracking-tight text-foreground sm:text-6xl font-headline">
+                <p className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">
                     500+ Happy Clients Said To US They Are Satisfied
                 </p>
             </div>

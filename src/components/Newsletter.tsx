@@ -37,7 +37,7 @@ export function Newsletter() {
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-2 space-y-6">
               <p className="text-primary font-semibold font-headline text-2xl">Subscribe Now</p>
-              <h2 className="text-6xl md:text-7xl font-headline font-bold tracking-tight text-foreground">
+              <h2 className="text-4xl font-headline font-bold tracking-tight text-foreground">
                 Subscriber To <span className="text-primary">Our</span> Newsletter
               </h2>
               <form 
