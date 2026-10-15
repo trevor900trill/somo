@@ -24,9 +24,17 @@ export function Hero() {
               Circular Shared Production Hubs
             </p>
           </div>
-          <p className="text-lg md:text-xl text-foreground/80">
-            This model allows small businesses and entrepreneurs to access high-quality equipment without the burden of upfront capital costs, fostering innovation and production flexibility. Our hubs eliminate the traditional barriers of high capital investment, making quality production accessible to everyone and reducing post harvest losses.
-          </p>
+          <div className="space-y-4 text-base md:text-lg text-foreground/85 leading-relaxed">
+            <p>
+              Tengeneza na Somo is a social enterprise operating shared mini-manufacturing facilities that enable micro and small businesses to access affordable production equipment, technical expertise and value-addition services without the high cost of setting up their own factories.
+            </p>
+            <p>
+              Through a pay-per-use model, Tengeneza provides access to production facilities, technical training, product development, quality assurance, KEBS certification support, packaging solutions, raw material sourcing and market linkages, with a focus on agro-processing, cosmetics and personal care products.
+            </p>
+            <p>
+              Tengeneza is building a financially sustainable and scalable network of manufacturing hubs that enables entrepreneurs to produce quality, market-ready products, grow their businesses and create jobs, while promoting resource efficiency and sustainable local manufacturing.
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <Button asChild size="lg" className="rounded-sm">
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe-aGTobKLbQcikibwjluTWEGvQbh7BZITQsw-uFuw40U3AxQ/viewform?vc=0&c=0&w=1&flr=0" target="_blank">Book A Session</Link>
